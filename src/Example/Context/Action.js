@@ -1,0 +1,8 @@
+export default {
+  // actions
+  SET_PAGE_DATA: "SET_PAGE_DATA", // 设置页面结构数据
+  SET_SELECTED_COMPONENT: "SET_SELECTED_COMPONENT", // 设置当前选中的组件
+  UPDATE_STYLE: "UPDATE_STYLE", // 修改样式
+  UPDATE_NODE_BY_ID: "UPDATE_NODE_BY_ID", // 修改节点数据
+  DELETE_COMPONENT: "DELETE_COMPONENT", // 删除组件
+};

@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+}
+
+.component-list {
+  width: 200px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.component {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.component.dragging {
+  opacity: 0.5;
+}
+
+.drop-zone {
+  flex: 1;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  min-height: 200px;
+  overflow: auto;
+  position: relative;
+}
+
+.drop-zone.highlight {
+  border: 2px solid green;
+}
+
+.draggable-component {
+  margin-bottom: 10px;
+  cursor: move;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: relative;
+}
+
+.draggable-component.dragging {
+  opacity: 0.5;
+}
+
+/* .component-toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
   color: white;
+  display: flex;
+  align-items: center;
+  padding: 2px 5px;
+} */
+
+.drag-icon {
+  cursor: move;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.properties-panel {
+  width: 200px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ddd;
 }
