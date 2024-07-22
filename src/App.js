@@ -1,6 +1,6 @@
 import React from "react";
 import Example from "./Example";
-import { DataProvider } from "./Example6/Context/DataContext";
+import { DataProvider } from "./Example/Context/DataContext";
 import "./App.css";
 
 function App() {
